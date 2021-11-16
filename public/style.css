@@ -24,10 +24,26 @@ form div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 30px;
+  /* align-items: center; */
+  margin: 10vw;
+  margin-top: 30px;
 }
 
 .row {
   display: flex;
+}
+
+
+.artContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 15vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.artRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

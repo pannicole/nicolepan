@@ -6,6 +6,9 @@ import TravelPost from './TravelPost'
  */
 export const Camera = props => {
   return (
+    <div>
+    <h3> travel </h3>
+    <p> a collection of my favorite photos </p>
     <div className = "container">
       <div className = "row">
         <TravelPost imgURL = {"../photos/tz/kubu.jpg"} alt={"tanzania"}/>
@@ -36,6 +39,7 @@ export const Camera = props => {
         <TravelPost imgURL = {"../photos/asia/japan-1.jpg"} alt={"japan"}/>
         <TravelPost imgURL = {"../photos/usa/seattle-1.jpg"} alt={"seattle"}/>
       </div>
+    </div>
     </div>
   )
 }

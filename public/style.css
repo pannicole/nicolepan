@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "gar";
+  src: url("./CormorantGaramond-Regular.ttf")
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "gar";
 }
 
 a {
@@ -10,10 +15,12 @@ label {
   display: block;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
+a {
+  margin: 5px;
+  font-family: "gar";
+  color: black;
 }
+
 
 form div {
   margin: 1em;
@@ -46,4 +53,36 @@ form div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#page {
+  background-image: url("./nicole\ pan.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position:left;
+  position: fixed;
+  overflow: hidden;
+}
+
+h1 {
+  animation: 2s slide-right forwards;
+    transform:translateX(-100%);
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0)
+  }
+}
+
+#homeNav {
+  animation: 2s slide-down forwards;
+    transform:translateY(-100%);
+}
+
+@keyframes slide-down {
+  to {
+    transform: translateY(0)
+  }
 }

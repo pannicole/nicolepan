@@ -4,11 +4,10 @@ import {Link} from 'react-router-dom'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    {/* <h1>nicole pan</h1> */}
     <nav>
       <Link to="/camera">Camera</Link>
       <Link to="/pen">Pen</Link>
-      <Link to="/face">Face</Link>
+      <Link to="/lifestyle">Lifestyle</Link>
       <Link to="/">Me</Link>
     </nav>
     <hr />

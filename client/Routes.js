@@ -17,7 +17,7 @@ class Routes extends Component {
       <div>
         <Switch>
           <Route exact path="/" component={Me} />
-          <Route exact path="/face" component={Face} />
+          <Route exact path="/lifestyle" component={Face} />
           <Route exact path="/pen" component={Pen} />
           <Route exact path="/camera" component={Camera} />
         </Switch>

@@ -1,5 +1,6 @@
 import React from 'react'
 import TravelPost from './TravelPost'
+import Navbar from './Navbar'
 
 /**
  * COMPONENT
@@ -7,6 +8,7 @@ import TravelPost from './TravelPost'
 export const Camera = props => {
   return (
     <div>
+      <Navbar/>
     <h3> travel </h3>
     <p> a collection of my favorite photos </p>
     <div className = "container">

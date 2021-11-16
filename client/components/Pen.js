@@ -1,5 +1,6 @@
 import React from 'react'
 import ArtPost from './ArtPost'
+import Navbar from './Navbar'
 
 /**
  * COMPONENT
@@ -7,6 +8,7 @@ import ArtPost from './ArtPost'
 export const Pen = props => {
   return (
     <div>
+      <Navbar />
     <h3> portfolio </h3>
     <p>  <a href="https://www.instagram.com/_nicolepen/" id = "ig"> @_nicolepen </a>  </p>
     <div className = "artContainer">

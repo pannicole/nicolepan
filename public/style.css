@@ -70,6 +70,6 @@ form div {
   width: 100%;
   background-size: cover;
   background-position:left;
-  position: fixed;
+  /* position: fixed; */
   overflow: hidden;
 }

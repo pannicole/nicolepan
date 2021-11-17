@@ -27,10 +27,10 @@ export const Face = (props) => {
             sx={{ flexGrow: 1, display: "flex", flexDirection: "row", justifyContent: "center" }}
             style={{ marginLeft: "5vw", marginRight: "5vw", }}
           >
-            <img src={"../photos/nicole.jpg"} alt={"nicole"} />
+            {/* <img src={"../photos/nicole.jpg"} alt={"nicole"} /> */}
           </Box>
         </Box>
-        <Navbar />
+        {/* <Navbar /> */}
       </Box>
     </Box>
   );

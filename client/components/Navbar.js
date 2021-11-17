@@ -2,9 +2,7 @@ import { flexbox } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import Slide from "@mui/material/Slide";
-import Fade from "@mui/material/Fade";
-import Grid from "@mui/material/Grid";
+// import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = (props) => (
   <Box

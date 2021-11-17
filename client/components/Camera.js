@@ -12,7 +12,7 @@ export const Camera = (props) => {
   return (
     <Box>
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
-      <Fade in = {true} timeout= {2000}>
+      {/* <Fade in = {true} timeout= {2000}> */}
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <div>
             <h1 style={{ textAlign: "center", marginBottom: "10px", marginTop: "100px"}}>
@@ -125,8 +125,8 @@ export const Camera = (props) => {
             </Grid>
           </Box>
         </Box>
-        </Fade>
-        <Navbar />
+        {/* </Fade> */}
+        {/* <Navbar /> */}
       </Box>
 
     </Box>

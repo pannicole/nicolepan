@@ -1,38 +1,31 @@
-import { flexbox } from "@mui/system";
 import React from "react";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import Slide from "@mui/material/Slide";
-import Fade from "@mui/material/Fade";
-import Grid from "@mui/material/Grid";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-const Navbar = (props) => (
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-end",
-      justifyContent: "space-between",
-      marginRight: "55px",
-      borderRight: "1px solid black",
-      paddingRight: "10px",
-    }}
-  >
+const Navbar = (props) => {
+  const matches = useMediaQuery('(max-width:650px)');
+  let dir = (matches) ? "row" : "column"
+  let page = props.page
+  return (
     <Box
       sx={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: `${dir}`,
         alignItems: "flex-end",
-        marginTop: "50px",
+        marginTop: "3vw",
+        top: "0",
+        right: "10px",
+        position: "fixed",
       }}
     >
-      <Link to="/lifestyle">lifestyle</Link>
-      <Link to="/projects">projects</Link>
-      <Link to="/travel">travel</Link>
-      <Link to="/art">art</Link>
-      <Link to="/">home</Link>
+      <Link to="/lifestyle"><p className = { (page == "lifestyle") ? "selected" : "notSelected" }>lifestyle</p></Link>
+      <Link to="/projects"><p className = { (page == "projects") ? "selected" : "notSelected" }>projects</p></Link>
+      <Link to="/travel"><p className = { (page == "travel") ? "selected" : "notSelected" }>travel</p></Link>
+      <Link to="/art"><p className = { (page == "art") ? "selected" : "notSelected" }>art</p></Link>
+      <Link to="/"><p className = { (page == "home") ? "selected" : "notSelected" }>home</p></Link>
     </Box>
-   </Box>
-);
+  )
+};
 
 export default Navbar;

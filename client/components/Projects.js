@@ -1,36 +1,31 @@
 import React from "react";
-import { connect } from "react-redux";
 import Navbar from "./Navbar";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
+import Fade from "@mui/material/Fade";
+import useMediaQuery from '@mui/material/useMediaQuery';
 /**
  * COMPONENT
  */
 export const Projects = (props) => {
+  const matches = useMediaQuery('(max-width:650px)');
   return (
     <Box>
+      {matches ? <Navbar page={`${props.page}`} /> : <> </>}
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 2}}>
-          <Box>
-            <h1
-              style={{
-                textAlign: "center",
-                marginBottom: "10px",
-                marginTop: "100px",
-              }}
-            >
-              projects
-            </h1>
-            <p style={{ textAlign: "center" }}>nothing here yet :)</p>
-          </Box>
+        <Fade in={true} timeout={2000}>
           <Box
-            sx={{ flexGrow: 1, display: "flex", flexDirection: "row", justifyContent: "center" }}
-            style={{ marginLeft: "5vw", marginRight: "5vw", }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              flex: 1,
+              margin: "10vw",
+              marginRight: "15vw",
+            }}
           >
             <img src={"../photos/nicole.jpg"} alt={"nicole"} />
           </Box>
-        </Box>
-        <Navbar />
+        </Fade>
+        {matches ? <> </> : <Navbar page={`${props.page}`} />}
       </Box>
     </Box>
   );

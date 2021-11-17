@@ -10257,9 +10257,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _TravelPost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TravelPost */ "./client/components/TravelPost.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
-/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
+
 
 
 
@@ -10271,144 +10273,134 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Camera = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__["default"])('(max-width:650px)');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], null, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: 'travel'
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
       height: "96vh"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], {
     in: true,
     timeout: 2000
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
-      flexDirection: "column"
+      flexDirection: "column",
+      flex: 1,
+      margin: "10vw",
+      marginRight: "15vw"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    style: {
-      textAlign: "center",
-      marginBottom: "10px",
-      marginTop: "100px"
-    }
-  }, " ", "travel", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    style: {
-      textAlign: "center"
-    }
-  }, " ", "a collection of my favorite photos", " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    sx: {
-      flexGrow: 1
-    },
-    style: {
-      marginLeft: "5vw",
-      marginRight: "5vw"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     container: true,
     spacing: 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/tz/kubu.jpg",
     alt: "tanzania"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/peru/rainbow-1.jpg",
     alt: "peru"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/wa-1.jpg",
     alt: "washington"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/bryce.jpg",
     alt: "bryce"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/singapore-1.jpg",
     alt: "singapore"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/hawaii/hawaii-1.jpg",
     alt: "hawaii"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/tulum/tulum-1.jpg",
     alt: "tulum"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/azores-1.jpg",
     alt: "azores"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/ams-1.jpg",
     alt: "amsterdam"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/london-1.jpg",
     alt: "london"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/berl-1.jpg",
     alt: "berlin"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/taiwan.jpg",
     alt: "taiwan"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/tahoe-1.jpg",
     alt: "tahoe"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/greece-1.jpg",
     alt: "greece"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/utah-1.jpg",
     alt: "utah"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/japan-1.jpg",
     alt: "japan"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/seattle-1.jpg",
     alt: "seattle"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }))))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: 'travel'
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Camera);
 
@@ -10429,7 +10421,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
+
 
 
 
@@ -10440,43 +10435,40 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Face = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__["default"])('(max-width:650px)');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], null, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: `lifestyle`
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
       height: "96vh"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    in: true,
+    timeout: 2000
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
-      flexDirection: "column",
-      flexGrow: 2
+      flexDirection: "column"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    style: {
-      textAlign: "center",
-      marginBottom: "10px",
-      marginTop: "100px"
-    }
-  }, "lifestyle"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    style: {
-      textAlign: "center"
-    }
-  }, "nothing here yet :)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
-      flexGrow: 1,
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center"
+      flexGrow: 1
     },
     style: {
-      marginLeft: "5vw",
-      marginRight: "5vw"
+      margin: "5vw",
+      marginRight: "10vw"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "../photos/nicole.jpg",
-    alt: "nicole"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+    alt: "nicole",
+    style: {
+      margin: "5vw"
+    }
+  })))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: `lifestyle`
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Face);
 
@@ -10495,9 +10487,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _mui_material_Slide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Slide */ "./node_modules/@mui/material/Slide/Slide.js");
-
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
 
 
 
@@ -10507,6 +10498,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const HomeName = props => {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_1__["default"])('(max-width:650px)');
+  let textColor = matches ? "white" : "black";
+  let marginBottom = matches ? "68px" : "35px";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Slide__WEBPACK_IMPORTED_MODULE_2__["default"], {
     direction: "right",
     in: true,
@@ -10518,7 +10512,12 @@ const HomeName = props => {
       fontSize: "3rem",
       fontFamily: "gar",
       marginTop: "5px",
-      marginBottom: "33px"
+      marginRight: "10px",
+      textAlign: "right",
+      color: `${textColor}`,
+      bottom: `${marginBottom}`,
+      right: `10px`,
+      position: "fixed"
     }
   }, "nicole pan"));
 };
@@ -10539,10 +10538,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_Slide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Slide */ "./node_modules/@mui/material/Slide/Slide.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _HomeName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomeName */ "./client/components/HomeName.js");
 /* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
 
 
@@ -10555,9 +10554,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const HomeNavBar = props => {
-  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__["default"])('(max-width:360px)');
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__["default"])("(max-width:650px)");
   let dir = matches ? "row" : "column";
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Slide__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  let page = props.page;
+
+  if (page === undefined) {
+    page = "home";
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Slide__WEBPACK_IMPORTED_MODULE_3__["default"], {
     direction: "down",
     in: true,
     timeout: 800,
@@ -10568,19 +10573,32 @@ const HomeNavBar = props => {
       display: "flex",
       flexDirection: `${dir}`,
       alignItems: "flex-end",
-      marginTop: "3vw"
+      marginTop: "3vw",
+      top: "0",
+      right: "10px",
+      position: "fixed"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/lifestyle"
-  }, "lifestyle"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "lifestyle" ? "selected" : "notSelected"
+  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/projects"
-  }, "projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "projects" ? "selected" : "notSelected"
+  }, "projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/travel"
-  }, "travel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "travel" ? "selected" : "notSelected"
+  }, "travel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/art"
-  }, "art"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "art" ? "selected" : "notSelected"
+  }, "art")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/"
-  }, "home")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "home" ? "selected" : "notSelected"
+  }, "home")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeNavBar);
 
@@ -10617,11 +10635,12 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Me = props => {
-  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__["default"])("(max-width:360px)");
-  console.log(matches);
+  const small = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__["default"])("(max-width:360px)");
+  const medium = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__["default"])("(max-width:650px)");
+  let bgImage = !small ? `url("./background.png")` : `url("./photos/nicole.jpg")`;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sx: {
-      backgroundImage: `url("./background.png")`,
+      backgroundImage: `${bgImage}`,
       height: "100vh",
       width: "100%",
       backgroundSize: "cover",
@@ -10630,25 +10649,15 @@ const Me = props => {
       overflow: "hidden",
       display: "flex"
     }
-  }, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, medium ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
       display: "flex",
       flexGrow: 1,
       flexDirection: "column",
-      justifyContent: "space-between"
+      alignItems: "center",
+      justifyContent: "center"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      flexGrow: 1
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: {
-      flexGrow: 1,
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-evenly"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_iAm__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_3__["default"], null))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_iAm__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_3__["default"], null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
@@ -10674,17 +10683,9 @@ const Me = props => {
     style: {
       flex: 1
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    sx: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-end",
-      justifyContent: "space-between",
-      marginRight: "70px",
-      borderRight: "1px solid black",
-      paddingRight: "10px"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_3__["default"], null))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: "home"
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Me);
 
@@ -10702,44 +10703,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
 
 
 
 
 
-
-
-
-const Navbar = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  sx: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-end",
-    justifyContent: "space-between",
-    marginRight: "55px",
-    borderRight: "1px solid black",
-    paddingRight: "10px"
-  }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  sx: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-end",
-    marginTop: "50px"
-  }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/lifestyle"
-}, "lifestyle"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/projects"
-}, "projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/travel"
-}, "travel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/art"
-}, "art"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
-  to: "/"
-}, "home")));
+const Navbar = props => {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_1__["default"])('(max-width:650px)');
+  let dir = matches ? "row" : "column";
+  let page = props.page;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    sx: {
+      display: "flex",
+      flexDirection: `${dir}`,
+      alignItems: "flex-end",
+      marginTop: "3vw",
+      top: "0",
+      right: "10px",
+      position: "fixed"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/lifestyle"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "lifestyle" ? "selected" : "notSelected"
+  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/projects"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "projects" ? "selected" : "notSelected"
+  }, "projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/travel"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "travel" ? "selected" : "notSelected"
+  }, "travel")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/art"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "art" ? "selected" : "notSelected"
+  }, "art")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "home" ? "selected" : "notSelected"
+  }, "home")));
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
 
@@ -10760,9 +10767,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _ArtPost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArtPost */ "./client/components/ArtPost.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
-/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
-/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
+/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
+
 
 
 
@@ -10774,45 +10783,39 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Pen = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__["default"])("(max-width:650px)");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], null, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: "art"
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
       height: "96vh"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], {
     in: true,
     timeout: 2000
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       display: "flex",
-      flexDirection: "column"
+      flexDirection: "column",
+      flex: 1,
+      margin: "10vw",
+      marginRight: "15vw"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     style: {
-      textAlign: "center",
-      marginBottom: "10px",
-      marginTop: "100px"
-    }
-  }, "portfolio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    style: {
-      textAlign: "center"
+      textAlign: "left",
+      margin: "0px",
+      padding: "0px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     href: "https://www.instagram.com/_nicolepen/",
     id: "ig"
-  }, "@_nicolepen"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    sx: {
-      flexGrow: 1
-    },
-    style: {
-      marginLeft: "5vw",
-      marginRight: "5vw"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "@_nicolepen")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     container: true,
     spacing: 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -10824,7 +10827,7 @@ const Pen = props => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-7.jpg",
     alt: "sun and air, williamsburg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -10836,7 +10839,7 @@ const Pen = props => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-8.jpg",
     alt: "bruges, belgium"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 4
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -10848,19 +10851,21 @@ const Pen = props => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-9.jpg",
     alt: "cloisters, nyc"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-10.jpg",
     alt: "westport, connecticut"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
     item: true,
     xs: 6
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-11.jpg",
     alt: "michigan"
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }))))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    page: "art"
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pen);
 
@@ -10879,9 +10884,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
+/* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
 
 
 
@@ -10892,43 +10898,32 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Projects = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__["default"])('(max-width:650px)');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    page: `${props.page}`
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
       height: "96vh"
     }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Fade__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    in: true,
+    timeout: 2000
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       display: "flex",
       flexDirection: "column",
-      flexGrow: 2
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
-    style: {
-      textAlign: "center",
-      marginBottom: "10px",
-      marginTop: "100px"
-    }
-  }, "projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    style: {
-      textAlign: "center"
-    }
-  }, "nothing here yet :)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    sx: {
-      flexGrow: 1,
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center"
-    },
-    style: {
-      marginLeft: "5vw",
-      marginRight: "5vw"
+      flex: 1,
+      margin: "10vw",
+      marginRight: "15vw"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     src: "../photos/nicole.jpg",
     alt: "nicole"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    page: `${props.page}`
+  })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
 
@@ -11006,7 +11001,8 @@ const IAm = props => {
     timeout: 600
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
-      // flex: 1,
+      maxWidth: "300px",
+      marginTop: "30vh",
       flexWrap: "nowrap",
       backgroundColor: "white",
       color: "black",
@@ -11050,7 +11046,7 @@ const IAm = props => {
       textAlign: "right",
       fontSize: "2rem"
     }
-  }, "welcome :)"))));
+  }, "welcome!"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IAm);
 

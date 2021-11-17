@@ -75,3 +75,16 @@ form div {
 }
 
 
+.selected {
+  font-weight: bolder;
+  font-size: larger;
+  padding: 0px;
+  margin: 0px;
+}
+
+.notSelected {
+  font-weight: lighter;
+  color: gray;
+  padding: 0px;
+  margin: 0px;
+}

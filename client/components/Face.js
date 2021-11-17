@@ -1,38 +1,35 @@
 import React from "react";
 import { connect } from "react-redux";
 import Navbar from "./Navbar";
-import Grid from "@mui/material/Grid";
+import Fade from "@mui/material/Fade";
 import Box from "@mui/material/Box";
+import useMediaQuery from '@mui/material/useMediaQuery';
 /**
  * COMPONENT
  */
 export const Face = (props) => {
+  const matches = useMediaQuery('(max-width:650px)');
   return (
     <Box>
-      <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
-        <Box sx={{ display: "flex", flexDirection: "column", flexGrow: 2}}>
-          <Box>
-            <h1
-              style={{
-                textAlign: "center",
-                marginBottom: "10px",
-                marginTop: "100px",
-              }}
-            >
-              lifestyle
-            </h1>
-            <p style={{ textAlign: "center" }}>nothing here yet :)</p>
-          </Box>
-          <Box
-            sx={{ flexGrow: 1, display: "flex", flexDirection: "row", justifyContent: "center" }}
-            style={{ marginLeft: "5vw", marginRight: "5vw", }}
-          >
-            <img src={"../photos/nicole.jpg"} alt={"nicole"} />
-          </Box>
+    {matches? (<Navbar page = {`lifestyle`}/>) : (<> </>) }
+    <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
+
+    <Fade in = {true} timeout= {2000}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box
+          sx={{ flexGrow: 1 }}
+          style={{ margin: "5vw", marginRight: "10vw" }}
+        >
+           <img src={"../photos/nicole.jpg"} alt={"nicole"} style={{margin: "5vw"}}/>
         </Box>
-        <Navbar />
       </Box>
+      </Fade>
+      {(matches) ? (<> </>) : (
+        <Navbar page = {`lifestyle`}/>)}
     </Box>
+  </Box>
+
+
   );
 };
 

@@ -12,7 +12,8 @@ export const IAm = (props) => {
     <Fade in={true} style={{ transitionDelay: "2000ms" }} timeout={600}>
       <Grid
         sx={{
-          // flex: 1,
+          maxWidth: "300px",
+          marginTop: "30vh",
           flexWrap: "nowrap",
           backgroundColor: "white",
           color: "black",
@@ -52,7 +53,7 @@ export const IAm = (props) => {
             & artist.
           </p>
           <h1 style={{ margin: "0px", textAlign: "right", fontSize: "2rem"}}>
-            welcome :)
+            welcome!
           </h1>
         </Grid>
       </Grid>

@@ -3,6 +3,16 @@
   src: url("./CormorantGaramond-Regular.ttf")
 }
 
+.page {
+  background-image: url("./background.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position:left;
+  position: fixed;
+  overflow: hidden;
+}
+
 body {
   font-family: "gar";
 }
@@ -64,12 +74,4 @@ form div {
   justify-content: space-between;
 }
 
-.page {
-  background-image: url("./background.png");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position:left;
-  position: fixed;
-  overflow: hidden;
-}
+

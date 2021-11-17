@@ -10,15 +10,11 @@ import Grid from "@mui/material/Grid";
  */
 export const Me = (props) => {
   return (
-    <Box style={{  backgroundImage: `url("./background.png")`,
-    height: "100vh",
-    width: "100%",
-    backgroundSize: "cover",
-    backgroundPosition:"left",
-    position: "fixed",
-    overflow: "hidden"}}>
+    <Box className = "page">
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
-          <Grid style={{flex: 1}}></Grid>
+          <Grid style={{flex: 1}}>
+            {/* <img src="./photos/nicole.jpg"/> */}
+          </Grid>
           <Grid style={{display: "flex", flexDirection:"column", flex: 1, alignItems: "flex-start"}}>
             <Grid style={{flex: 1}}></Grid>
             <Fade in={true} style={{ transitionDelay: '2000ms'}} timeout={600}>

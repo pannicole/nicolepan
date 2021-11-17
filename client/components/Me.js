@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Slide from "@mui/material/Slide";
 import Fade from "@mui/material/Fade";
+import Grid from "@mui/material/Grid";
 
 /**
  * COMPONENT
@@ -11,21 +12,21 @@ export const Me = (props) => {
   return (
     <Box id="page">
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
-          <div style={{flex: 1}}></div>
-          <div style={{display: "flex", flexDirection:"column", flex: 1, alignItems: "flex-start"}}>
-            <div style={{flex: 1}}></div>
+          <Grid style={{flex: 1}}></Grid>
+          <Grid style={{display: "flex", flexDirection:"column", flex: 1, alignItems: "flex-start"}}>
+            <Grid style={{flex: 1}}></Grid>
             <Fade in={true} style={{ transitionDelay: '2000ms'}} timeout={600}>
-              <Box sx={{ flex: 1, flexWrap: "nowrap"}}>
+              <Grid sx={{ flex: 1, flexWrap: "nowrap", backgroundColor: "white", color: "black"}}>
                 <h1 style={{marginBottom: "0px", marginLeft: "125px"}}>i am:</h1>
-                <div style={{marginLeft: "200px"}}>
+                <Grid style={{marginLeft: "200px"}}>
                   <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>a software engineer,</p>
                   <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>lifestyle model,</p>
                   <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>& artist</p>
-                </div>
-              </Box>
+                </Grid>
+              </Grid>
             </Fade>
-            <div style={{flex: 1}}></div>
-          </div>
+            <Grid style={{flex: 1}}></Grid>
+          </Grid>
 
 
         <Box
@@ -48,10 +49,9 @@ export const Me = (props) => {
               marginTop: "50px",
             }}
           >
-
-              <Link to="/camera">travel</Link>
-              <Link to="/pen">pen</Link>
               <Link to="/lifestyle">lifestyle</Link>
+              <Link to="/travel">travel</Link>
+              <Link to="/art">art</Link>
               <Link to="/">me</Link>
           </Box>
           </Slide>

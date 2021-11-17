@@ -1,17 +1,24 @@
-import React from 'react'
-import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
+import { flexbox } from "@mui/system";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Navbar = ({handleClick, isLoggedIn}) => (
-  <div>
-    <nav>
-      <Link to="/camera">Camera</Link>
-      <Link to="/pen">Pen</Link>
-      <Link to="/lifestyle">Lifestyle</Link>
-      <Link to="/">Me</Link>
+const Navbar = (props) => (
+  <div style={{ marginTop: "20px"}}>
+    <nav style={{display: "flex", flexDirection:"row", justifyContent: "flex-end"}}>
+      <div className = "navLink">
+        <Link to="/lifestyle">lifestyle</Link>
+      </div>
+      <div className = "navLink">
+        <Link to="/travel">travel</Link>
+      </div>
+      <div className = "navLink">
+        <Link to="/art">art</Link>
+      </div>
+      <div className = "navLink">
+        <Link to="/">home</Link>
+      </div>
     </nav>
-    <hr />
   </div>
-)
+);
 
-export default Navbar
+export default Navbar;

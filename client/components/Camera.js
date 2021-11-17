@@ -11,10 +11,10 @@ export const Camera = props => {
   return (
     <div>
       <Navbar/>
-    <h3> travel </h3>
-    <p> a collection of my favorite photos </p>
-    <Box sx={{flexGrow: 1}}>
-      <Grid container spacing={2}>
+    <h1 style={{textAlign: "center", marginBottom: "10px"}}> travel </h1>
+    <p style={{textAlign: "center"}}> a collection of my favorite photos </p>
+    <Box sx={{flexGrow: 1}} style={{marginLeft: "5vw", marginRight: "5vw"}}>
+      <Grid container spacing={1}>
           <Grid item xs={4}>
             <TravelPost imgURL = {"../photos/tz/kubu.jpg"} alt={"tanzania"}/>
           </Grid>

@@ -9,7 +9,7 @@ export const Face = props => {
   return (
     <div>
       <Navbar />
-      <h3>Face</h3>
+      <h1 style={{textAlign: "center"}}>Nothing here... yet :)</h1>
     </div>
   )
 }

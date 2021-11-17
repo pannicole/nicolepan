@@ -10,7 +10,13 @@ import Grid from "@mui/material/Grid";
  */
 export const Me = (props) => {
   return (
-    <Box className="page">
+    <Box style={{  backgroundImage: `url("./background.png")`,
+    height: "100vh",
+    width: "100%",
+    backgroundSize: "cover",
+    backgroundPosition:"left",
+    position: "fixed",
+    overflow: "hidden"}}>
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
           <Grid style={{flex: 1}}></Grid>
           <Grid style={{display: "flex", flexDirection:"column", flex: 1, alignItems: "flex-start"}}>

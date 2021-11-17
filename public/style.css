@@ -64,25 +64,3 @@ form div {
   position: fixed;
   overflow: hidden;
 }
-
-h1 {
-  animation: 2s slide-right forwards;
-    transform:translateX(-100%);
-}
-
-@keyframes slide-right {
-  to {
-    transform: translateX(0)
-  }
-}
-
-#homeNav {
-  animation: 2s slide-down forwards;
-    transform:translateY(-100%);
-}
-
-@keyframes slide-down {
-  to {
-    transform: translateY(0)
-  }
-}

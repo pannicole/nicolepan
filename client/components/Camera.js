@@ -1,6 +1,8 @@
 import React from 'react'
 import TravelPost from './TravelPost'
 import Navbar from './Navbar'
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
 
 /**
  * COMPONENT
@@ -11,37 +13,61 @@ export const Camera = props => {
       <Navbar/>
     <h3> travel </h3>
     <p> a collection of my favorite photos </p>
-    <div className = "container">
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/tz/kubu.jpg"} alt={"tanzania"}/>
-        <TravelPost imgURL = {"../photos/peru/rainbow-1.jpg"} alt={"peru"}/>
-        <TravelPost imgURL = {"../photos/usa/wa-1.jpg"} alt={"washington"}/>
-      </div>
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/usa/bryce.jpg"} alt={"bryce"}/>
-        <TravelPost imgURL = {"../photos/asia/singapore-1.jpg"} alt={"singapore"}/>
-        <TravelPost imgURL = {"../photos/hawaii/hawaii-1.jpg"} alt={"hawaii"}/>
-      </div>
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/tulum/tulum-1.jpg"} alt={"tulum"}/>
-        <TravelPost imgURL = {"../photos/europe/azores-1.jpg"} alt={"azores"}/>
-        <TravelPost imgURL = {"../photos/europe/ams-1.jpg"} alt={"amsterdam"}/>
-      </div>
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/europe/london-1.jpg"} alt={"london"}/>
-        <TravelPost imgURL = {"../photos/europe/berl-1.jpg"} alt={"berlin"}/>
-        <TravelPost imgURL = {"../photos/asia/taiwan.jpg"} alt={"taiwan"}/>
-      </div>
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/usa/tahoe-1.jpg"} alt={"tahoe"}/>
-        <TravelPost imgURL = {"../photos/europe/greece-1.jpg"} alt={"greece"}/>
-        <TravelPost imgURL = {"../photos/usa/utah-1.jpg"} alt={"utah"}/>
-      </div>
-      <div className = "row">
-        <TravelPost imgURL = {"../photos/asia/japan-1.jpg"} alt={"japan"}/>
-        <TravelPost imgURL = {"../photos/usa/seattle-1.jpg"} alt={"seattle"}/>
-      </div>
-    </div>
+    <Box sx={{flexGrow: 1}}>
+      <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <TravelPost imgURL = {"../photos/tz/kubu.jpg"} alt={"tanzania"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/peru/rainbow-1.jpg"} alt={"peru"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/usa/wa-1.jpg"} alt={"washington"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/usa/bryce.jpg"} alt={"bryce"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/asia/singapore-1.jpg"} alt={"singapore"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/hawaii/hawaii-1.jpg"} alt={"hawaii"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/tulum/tulum-1.jpg"} alt={"tulum"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/europe/azores-1.jpg"} alt={"azores"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/europe/ams-1.jpg"} alt={"amsterdam"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/europe/london-1.jpg"} alt={"london"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/europe/berl-1.jpg"} alt={"berlin"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/asia/taiwan.jpg"} alt={"taiwan"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/usa/tahoe-1.jpg"} alt={"tahoe"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/europe/greece-1.jpg"} alt={"greece"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/usa/utah-1.jpg"} alt={"utah"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/asia/japan-1.jpg"} alt={"japan"}/>
+          </Grid>
+          <Grid item xs={4}>
+          <TravelPost imgURL = {"../photos/usa/seattle-1.jpg"} alt={"seattle"}/>
+          </Grid>
+        </Grid>
+    </Box>
     </div>
   )
 }

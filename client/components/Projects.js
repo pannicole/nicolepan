@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 /**
  * COMPONENT
  */
-export const Face = (props) => {
+export const Projects = (props) => {
   return (
     <Box>
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
@@ -19,7 +19,7 @@ export const Face = (props) => {
                 marginTop: "100px",
               }}
             >
-              lifestyle
+              projects
             </h1>
             <p style={{ textAlign: "center" }}>nothing here yet :)</p>
           </Box>
@@ -36,4 +36,4 @@ export const Face = (props) => {
   );
 };
 
-export default Face;
+export default Projects;

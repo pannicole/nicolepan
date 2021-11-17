@@ -5,6 +5,7 @@ import Me from './components/Me';
 import Face from './components/Face';
 import Pen from './components/Pen';
 import Camera from './components/Camera';
+import Projects from './components/Projects';
 
 /**
  * COMPONENT
@@ -20,6 +21,7 @@ class Routes extends Component {
           <Route exact path="/lifestyle" component={Face} />
           <Route exact path="/art" component={Pen} />
           <Route exact path="/travel" component={Camera} />
+          <Route exact path="/projects" component={Projects} />
         </Switch>
       </div>
     )

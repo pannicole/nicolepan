@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid";
  */
 export const Me = (props) => {
   return (
-    <Box id="page">
+    <Box className="page">
       <Box sx={{ display: "flex", flexDirection: "row", height: "96vh" }}>
           <Grid style={{flex: 1}}></Grid>
           <Grid style={{display: "flex", flexDirection:"column", flex: 1, alignItems: "flex-start"}}>
@@ -21,11 +21,13 @@ export const Me = (props) => {
                 <Grid style={{marginLeft: "200px"}}>
                   <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>a software engineer,</p>
                   <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>lifestyle model,</p>
-                  <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>& artist</p>
+                  <p style={{ margin: "5px", textAlign: "right", fontSize: "24px", whiteSpace: "nowrap"}}>& artist.</p>
+                  <h1 style={{marginBottom: "0px", textAlign: "right"}}>welcome!</h1>
                 </Grid>
+
               </Grid>
             </Fade>
-            <Grid style={{flex: 1}}></Grid>
+          <Grid style={{flex: 1}}></Grid>
           </Grid>
 
 
@@ -50,9 +52,10 @@ export const Me = (props) => {
             }}
           >
               <Link to="/lifestyle">lifestyle</Link>
+              <Link to="/projects">projects</Link>
               <Link to="/travel">travel</Link>
               <Link to="/art">art</Link>
-              <Link to="/">me</Link>
+              <Link to="/">home</Link>
           </Box>
           </Slide>
 

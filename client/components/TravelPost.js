@@ -6,9 +6,7 @@ import React from 'react'
  */
 export const TravelPost = props => {
   return (
-    <div style={{flex: 1, height: "50%"}}>
-      <img style= {{width: "100%"}}src={`${props.imgURL}`} alt={`${props.alt}`} />
-    </div>
+      <img style= {{minWidth: "300px", maxWidth: "30%", margin: "2px"}} src={`${props.imgURL}`} alt={`${props.alt}`} />
   )
 }
 

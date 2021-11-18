@@ -34,15 +34,8 @@ export const HomeNavBar = (props) => {
             position: "fixed",
           }}
         >
-          <Link to="/lifestyle">
-            <p className={page == "lifestyle" ? "selected" : "notSelected"}>
-              lifestyle
-            </p>
-          </Link>
-          <Link to="/projects">
-            <p className={page == "projects" ? "selected" : "notSelected"}>
-              projects
-            </p>
+          <Link to="/">
+            <p className={page == "home" ? "selected" : "notSelected"}>home</p>
           </Link>
           <Link to="/travel">
             <p className={page == "travel" ? "selected" : "notSelected"}>
@@ -52,8 +45,15 @@ export const HomeNavBar = (props) => {
           <Link to="/art">
             <p className={page == "art" ? "selected" : "notSelected"}>art</p>
           </Link>
-          <Link to="/">
-            <p className={page == "home" ? "selected" : "notSelected"}>home</p>
+          <Link to="/lifestyle">
+            <p className={page == "lifestyle" ? "selected" : "notSelected"}>
+              lifestyle
+            </p>
+          </Link>
+          <Link to="/projects">
+            <p className={page == "projects" ? "selected" : "notSelected"}>
+              projects
+            </p>
           </Link>
         </Box>
       </Slide>

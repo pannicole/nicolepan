@@ -10227,12 +10227,17 @@ __webpack_require__.r(__webpack_exports__);
 const ArtPost = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     style: {
-      flex: 1,
-      marginLeft: "4px"
+      height: "40vh",
+      flexGrow: 1,
+      maxWidth: "90vw",
+      margin: "5px",
+      display: "flex",
+      justifyContent: "center"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     style: {
-      width: "100%"
+      maxHeight: "100%",
+      objectFit: "cover"
     },
     src: `${props.imgURL}`,
     alt: `${props.alt}`
@@ -10257,7 +10262,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _TravelPost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TravelPost */ "./client/components/TravelPost.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
-/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
 /* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
@@ -10287,118 +10291,69 @@ const Camera = props => {
     timeout: 2000
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
-      display: "flex",
-      flexDirection: "column",
       flex: 1,
-      margin: "10vw",
+      margin: "5vw",
       marginRight: "15vw"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    container: true,
-    spacing: 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      marginTop: matches ? "10vw" : "0px"
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/tz/kubu.jpg",
     alt: "tanzania"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/peru/rainbow-1.jpg",
     alt: "peru"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/wa-1.jpg",
     alt: "washington"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/bryce.jpg",
     alt: "bryce"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/singapore-1.jpg",
     alt: "singapore"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/hawaii/hawaii-1.jpg",
     alt: "hawaii"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/tulum/tulum-1.jpg",
     alt: "tulum"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/azores-1.jpg",
     alt: "azores"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/ams-1.jpg",
     alt: "amsterdam"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/london-1.jpg",
     alt: "london"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/berl-1.jpg",
     alt: "berlin"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/taiwan.jpg",
     alt: "taiwan"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/tahoe-1.jpg",
     alt: "tahoe"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/europe/greece-1.jpg",
     alt: "greece"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/utah-1.jpg",
     alt: "utah"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/asia/japan-1.jpg",
     alt: "japan"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_TravelPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/usa/seattle-1.jpg",
     alt: "seattle"
-  }))))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  })))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     page: 'travel'
   })));
 };
@@ -10579,14 +10534,10 @@ const HomeNavBar = props => {
       position: "fixed"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
-    to: "/lifestyle"
+    to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "lifestyle" ? "selected" : "notSelected"
-  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
-    to: "/projects"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "projects" ? "selected" : "notSelected"
-  }, "projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+    className: page == "home" ? "selected" : "notSelected"
+  }, "home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
     to: "/travel"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: page == "travel" ? "selected" : "notSelected"
@@ -10595,10 +10546,14 @@ const HomeNavBar = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: page == "art" ? "selected" : "notSelected"
   }, "art")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
-    to: "/"
+    to: "/lifestyle"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "home" ? "selected" : "notSelected"
-  }, "home")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+    className: page == "lifestyle" ? "selected" : "notSelected"
+  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Link, {
+    to: "/projects"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "projects" ? "selected" : "notSelected"
+  }, "projects")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_1__["default"], null));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeNavBar);
 
@@ -10657,7 +10612,7 @@ const Me = props => {
       alignItems: "center",
       justifyContent: "center"
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_iAm__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_3__["default"], null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeNavBar__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomeName__WEBPACK_IMPORTED_MODULE_3__["default"], null)) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sx: {
       display: "flex",
       flexDirection: "row",
@@ -10726,14 +10681,10 @@ const Navbar = props => {
       position: "fixed"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/lifestyle"
+    to: "/"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "lifestyle" ? "selected" : "notSelected"
-  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/projects"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "projects" ? "selected" : "notSelected"
-  }, "projects")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    className: page == "home" ? "selected" : "notSelected"
+  }, "home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
     to: "/travel"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: page == "travel" ? "selected" : "notSelected"
@@ -10742,10 +10693,14 @@ const Navbar = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     className: page == "art" ? "selected" : "notSelected"
   }, "art")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/"
+    to: "/lifestyle"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
-    className: page == "home" ? "selected" : "notSelected"
-  }, "home")));
+    className: page == "lifestyle" ? "selected" : "notSelected"
+  }, "lifestyle")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/projects"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    className: page == "projects" ? "selected" : "notSelected"
+  }, "projects")));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
@@ -10767,7 +10722,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _ArtPost__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ArtPost */ "./client/components/ArtPost.js");
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./client/components/Navbar.js");
-/* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material/Fade */ "./node_modules/@mui/material/Fade/Fade.js");
 /* harmony import */ var _mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/useMediaQuery */ "./node_modules/@mui/material/useMediaQuery/useMediaQuery.js");
@@ -10797,73 +10751,60 @@ const Pen = props => {
     timeout: 2000
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
-      display: "flex",
-      flexDirection: "column",
       flex: 1,
-      margin: "10vw",
+      margin: "5vw",
       marginRight: "15vw"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
     style: {
       textAlign: "left",
       margin: "0px",
-      padding: "0px"
+      padding: "0px",
+      marginTop: matches ? "10vw" : "0px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
     href: "https://www.instagram.com/_nicolepen/",
     id: "ig"
-  }, "@_nicolepen")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    container: true,
-    spacing: 1
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
+  }, "@_nicolepen")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center"
+    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    imgURL: "../photos/art/art-7.jpg",
+    alt: "sun and air, williamsburg"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-1.jpg",
     alt: "mt. rainier, washington"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    imgURL: "../photos/art/art-2.jpg",
+    alt: "unica sede, london"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-4.jpg",
     alt: "berry park, williamsburg"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    imgURL: "../photos/art/art-7.jpg",
-    alt: "sun and air, williamsburg"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    imgURL: "../photos/art/art-2.jpg",
-    alt: "unica sede, london"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-5.jpg",
     alt: "lake tahoe, california"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    imgURL: "../photos/art/art-8.jpg",
-    alt: "bruges, belgium"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 4
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-3.jpg",
     alt: "golden gate, san francisco"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    imgURL: "../photos/art/art-8.jpg",
+    alt: "bruges, belgium"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-6.jpg",
     alt: "oahu, hawaii"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-9.jpg",
     alt: "cloisters, nyc"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 6
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-10.jpg",
     alt: "westport, connecticut"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    item: true,
-    xs: 6
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ArtPost__WEBPACK_IMPORTED_MODULE_1__["default"], {
     imgURL: "../photos/art/art-11.jpg",
     alt: "michigan"
-  }))))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  })))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     page: "art"
   })));
 };
@@ -10898,9 +10839,9 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const Projects = props => {
-  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__["default"])('(max-width:650px)');
+  const matches = (0,_mui_material_useMediaQuery__WEBPACK_IMPORTED_MODULE_2__["default"])("(max-width:650px)");
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], null, matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    page: `${props.page}`
+    page: `projects`
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: {
       display: "flex",
@@ -10914,15 +10855,31 @@ const Projects = props => {
     sx: {
       display: "flex",
       flexDirection: "column",
-      flex: 1,
-      margin: "10vw",
-      marginRight: "15vw"
+      margin: "5vw",
+      marginRight: "10vw",
+      flexGrow: 1
     }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      marginTop: matches ? "10vw" : "0px"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://github.com/pannicole"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: "../photos/nicole.jpg",
-    alt: "nicole"
-  }))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    page: `${props.page}`
+    src: "../photos/lav.png",
+    alt: "lav",
+    style: {
+      width: "200px"
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {
+    style: {
+      margin: "0px"
+    }
+  }, "github"))))), matches ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, " ") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    page: `projects`
   })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);
@@ -10948,18 +10905,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 const TravelPost = props => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     style: {
-      flex: 1,
-      height: "50%"
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    style: {
-      width: "100%"
+      minWidth: "300px",
+      maxWidth: "30%",
+      margin: "2px"
     },
     src: `${props.imgURL}`,
     alt: `${props.alt}`
-  }));
+  });
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TravelPost);
 
@@ -11002,7 +10956,7 @@ const IAm = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       maxWidth: "300px",
-      marginTop: "30vh",
+      // marginTop: "30vh",
       flexWrap: "nowrap",
       backgroundColor: "white",
       color: "black",
@@ -11011,12 +10965,11 @@ const IAm = props => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
     style: {
       margin: "0px",
-      marginLeft: "10vw",
       fontSize: "2rem"
     }
   }, "i am:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
     style: {
-      marginLeft: "15vw",
+      marginLeft: "5vw",
       padding: "10px"
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", {

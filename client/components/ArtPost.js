@@ -6,9 +6,10 @@ import Navbar from './Navbar'
  */
 export const ArtPost = props => {
   return (
-    <div style={{flex: 1, marginLeft: "4px"}}>
-      <img style= {{width: "100%"}}src={`${props.imgURL}`} alt={`${props.alt}`} />
-    </div>
+    <div style={{height: "40vh", flexGrow: 1, maxWidth: "90vw", margin: "5px",
+    display: "flex", justifyContent:"center"}}>
+      <img style= {{maxHeight: "100%", objectFit:"cover"}}src={`${props.imgURL}`} alt={`${props.alt}`} />
+      </div>
 
   )
 }

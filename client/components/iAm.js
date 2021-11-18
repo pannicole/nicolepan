@@ -13,15 +13,15 @@ export const IAm = (props) => {
       <Grid
         sx={{
           maxWidth: "300px",
-          marginTop: "30vh",
+          // marginTop: "30vh",
           flexWrap: "nowrap",
           backgroundColor: "white",
           color: "black",
           padding: "5px",
         }}
       >
-        <h1 style={{ margin: "0px", marginLeft: "10vw", fontSize: "2rem" }}>i am:</h1>
-        <Grid style={{ marginLeft: "15vw", padding: "10px" }}>
+        <h1 style={{ margin: "0px", fontSize: "2rem" }}>i am:</h1>
+        <Grid style={{ marginLeft: "5vw", padding: "10px" }}>
           <p
             style={{
               margin: "5px",

@@ -39,7 +39,7 @@ export const Me = (props) => {
           }}
         >
           <HomeNavBar />
-          <IAm />
+          {/* <IAm /> */}
           <HomeName />
         </div>
       ) : (
